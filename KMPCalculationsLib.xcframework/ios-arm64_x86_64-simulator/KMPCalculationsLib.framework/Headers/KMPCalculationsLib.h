@@ -751,7 +751,7 @@ __attribute__((swift_name("VariantType.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) KMPCLVariantTypeCompanion *shared __attribute__((swift_name("shared")));
-- (KMPCLExerciseType *)fromIntValue:(int32_t)value __attribute__((swift_name("fromInt(value:)")));
+- (KMPCLVariantType *)fromIntValue:(int32_t)value __attribute__((swift_name("fromInt(value:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
