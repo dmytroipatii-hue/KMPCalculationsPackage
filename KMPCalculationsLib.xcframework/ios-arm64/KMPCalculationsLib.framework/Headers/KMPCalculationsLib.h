@@ -562,6 +562,7 @@ __attribute__((swift_name("ExerciseType")))
 @property (class, readonly) KMPCLExerciseType *liftWeightWithSquat __attribute__((swift_name("liftWeightWithSquat")));
 + (KMPCLKotlinArray<KMPCLExerciseType *> *)values __attribute__((swift_name("values()")));
 @property (class, readonly) NSArray<KMPCLExerciseType *> *entries __attribute__((swift_name("entries")));
+- (KMPCLExerciseType * _Nullable)fromValueValue:(int32_t)value __attribute__((swift_name("fromValue(value:)")));
 - (BOOL)isRom __attribute__((swift_name("isRom()")));
 - (BOOL)isSupported __attribute__((swift_name("isSupported()")));
 - (BOOL)isSway __attribute__((swift_name("isSway()")));
