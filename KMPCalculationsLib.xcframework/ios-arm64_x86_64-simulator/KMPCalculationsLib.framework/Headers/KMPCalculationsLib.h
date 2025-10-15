@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class KMPCLAcquiredData, KMPCLCalculationModel, KMPCLCalculationMsgKeys, KMPCLCalculationResults, KMPCLCalculationResultsCompanion, KMPCLCalculationsManagerCompanion, KMPCLCsvConstants, KMPCLCsvConverter, KMPCLDetailedResults, KMPCLDetailedResultsCompanion, KMPCLExerciseType, KMPCLExerciseTypeCompanion, KMPCLForceResult, KMPCLGyrResult, KMPCLKotlinArray<T>, KMPCLKotlinEnum<E>, KMPCLKotlinEnumCompanion, KMPCLKotlinNothing, KMPCLKotlinx_serialization_coreSerialKind, KMPCLKotlinx_serialization_coreSerializersModule, KMPCLLiftData, KMPCLNumberFormatter, KMPCLParamsIds, KMPCLPhase, KMPCLPowerResult, KMPCLRotationResult, KMPCLSingleResult, KMPCLSingleResultCompanion, KMPCLUnitsModel, KMPCLUnitsModelCompanion, KMPCLVariantType;
+@class KMPCLAcquiredData, KMPCLCalculationModel, KMPCLCalculationMsgKeys, KMPCLCalculationResults, KMPCLCalculationResultsCompanion, KMPCLCalculationsManagerCompanion, KMPCLCsvConstants, KMPCLCsvConverter, KMPCLDetailedResults, KMPCLDetailedResultsCompanion, KMPCLExerciseType, KMPCLExerciseTypeCompanion, KMPCLForceResult, KMPCLGyrResult, KMPCLKotlinArray<T>, KMPCLKotlinEnum<E>, KMPCLKotlinEnumCompanion, KMPCLKotlinNothing, KMPCLKotlinx_serialization_coreSerialKind, KMPCLKotlinx_serialization_coreSerializersModule, KMPCLLiftData, KMPCLNumberFormatter, KMPCLParamsIds, KMPCLPhase, KMPCLPowerResult, KMPCLRotationResult, KMPCLSingleResult, KMPCLSingleResultCompanion, KMPCLUnitsModel, KMPCLUnitsModelCompanion, KMPCLVariantType, KMPCLVariantTypeCompanion;
 
 @protocol KMPCLKotlinAnnotation, KMPCLKotlinComparable, KMPCLKotlinIterator, KMPCLKotlinKAnnotatedElement, KMPCLKotlinKClass, KMPCLKotlinKClassifier, KMPCLKotlinKDeclarationContainer, KMPCLKotlinx_serialization_coreCompositeDecoder, KMPCLKotlinx_serialization_coreCompositeEncoder, KMPCLKotlinx_serialization_coreDecoder, KMPCLKotlinx_serialization_coreDeserializationStrategy, KMPCLKotlinx_serialization_coreEncoder, KMPCLKotlinx_serialization_coreKSerializer, KMPCLKotlinx_serialization_coreSerialDescriptor, KMPCLKotlinx_serialization_coreSerializationStrategy, KMPCLKotlinx_serialization_coreSerializersModuleCollector;
 
@@ -562,7 +562,6 @@ __attribute__((swift_name("ExerciseType")))
 @property (class, readonly) KMPCLExerciseType *liftWeightWithSquat __attribute__((swift_name("liftWeightWithSquat")));
 + (KMPCLKotlinArray<KMPCLExerciseType *> *)values __attribute__((swift_name("values()")));
 @property (class, readonly) NSArray<KMPCLExerciseType *> *entries __attribute__((swift_name("entries")));
-- (KMPCLExerciseType * _Nullable)fromValueValue:(int32_t)value __attribute__((swift_name("fromValue(value:)")));
 - (BOOL)isRom __attribute__((swift_name("isRom()")));
 - (BOOL)isSupported __attribute__((swift_name("isSupported()")));
 - (BOOL)isSway __attribute__((swift_name("isSway()")));
@@ -735,6 +734,7 @@ __attribute__((swift_name("VariantType")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) KMPCLVariantTypeCompanion *companion __attribute__((swift_name("companion")));
 @property (class, readonly) KMPCLVariantType *armsOnHips __attribute__((swift_name("armsOnHips")));
 @property (class, readonly) KMPCLVariantType *freeArms __attribute__((swift_name("freeArms")));
 @property (class, readonly) KMPCLVariantType *leftSide __attribute__((swift_name("leftSide")));
@@ -742,6 +742,16 @@ __attribute__((swift_name("VariantType")))
 + (KMPCLKotlinArray<KMPCLVariantType *> *)values __attribute__((swift_name("values()")));
 @property (class, readonly) NSArray<KMPCLVariantType *> *entries __attribute__((swift_name("entries")));
 @property (readonly) int32_t id __attribute__((swift_name("id")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("VariantType.Companion")))
+@interface KMPCLVariantTypeCompanion : KMPCLBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) KMPCLVariantTypeCompanion *shared __attribute__((swift_name("shared")));
+- (KMPCLVariantType * _Nullable)fromIntValue:(int32_t)value __attribute__((swift_name("fromInt(value:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
