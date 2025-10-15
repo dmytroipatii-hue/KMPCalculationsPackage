@@ -1,0 +1,8 @@
+framework module "KMPCalculationsLib" {
+    umbrella header "KMPCalculationsLib.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
