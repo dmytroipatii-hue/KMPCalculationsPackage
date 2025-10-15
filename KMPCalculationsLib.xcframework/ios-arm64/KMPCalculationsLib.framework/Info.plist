@@ -5,7 +5,7 @@
     <key>CFBundleExecutable</key>
     <string>KMPCalculationsLib</string>
     <key>CFBundleIdentifier</key>
-    <string>com.example.kmp_yomido.KMPCalculationsLib</string>
+    <string>com.example.app</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -19,7 +19,7 @@
         <string>iPhoneOS</string>
     </array>
     <key>CFBundleVersion</key>
-    <string>1</string>
+    <string>1.0.1</string>
     <key>MinimumOSVersion</key>
     <string>12.0</string>
     <key>UIDeviceFamily</key>
